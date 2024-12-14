@@ -1,0 +1,171 @@
+/* Apply background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('image/background.jpg'); /* Add your preferred background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Transparent background */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-color: white;
+}
+
+/* Main content section */
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+/* Individual box styling */
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-top: 15px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Smaller header for tablets */
+    }
+}
+
+/* Mobile screens (small phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Adjust header font size */
+        padding: 10px 0; /* Reduce padding */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Smaller font for navigation links */
+        padding: 5px 8px; /* Reduce padding */
+    }
+
+    .box {
+        width: 90%; /* Take most of the screen width */
+        margin: 15px 0; /* Reduce margin between boxes */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .box h2 {
+        font-size: 1.2rem; /* Reduce heading size inside boxes */
+    }
+
+    .box p {
+        font-size: 0.9rem; /* Reduce paragraph font size */
+    }
+
+    .box img {
+        border-radius: 8px; /* Slightly reduce border radius */
+    }
+
+    #main-content {
+        padding: 20px; /* Reduce padding for compact layout */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        gap: 5px;
+    }
+}

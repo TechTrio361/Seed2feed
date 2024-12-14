@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustain Sphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <section class ="sub-header">
+        <nav>
+            <a href="index.html"><img src =""></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()" ></i>
+        </nav>
+        <h1>Articles</h1>
+        
+
+    </section>
+     <!------Articles----->
+     <section class="articles">
+        <h1>ARTICLES</h1>
+        <div class="row">
+            <div class="article-col">
+                <h3>The Impact of Food Donation on Communities</h3>
+                <p>Food donation plays a crucial role in combating hunger and food insecurity. By redistributing surplus food from restaurants, grocery stores, and events to food banks and shelters, communities can ensure that no edible food goes to waste. This not only helps reduce hunger but also supports vulnerable populations, giving them access to nutritious meals. Food donation also raises awareness about food waste, promoting a culture of sharing and sustainability. Every small contribution makes a big difference in the lives of people facing hunger.</p>
+            </div>
+            <div class="article-col">
+                <h3>Supporting NGOs Through Food Donations</h3>
+                <p>Non-governmental organizations (NGOs) play a crucial role in addressing hunger and food insecurity in communities around the world. Food donations from restaurants, events, and individuals are vital resources for NGOs that work to provide meals to those in need. These donations not only help to feed vulnerable populations but also allow NGOs to allocate their financial resources toward other essential services, such as education and healthcare. By donating food, we can strengthen the capacity of NGOs to make a lasting impact on communities.</p>
+            </div>
+            <div class="article-col">
+                <h3>"José Andrés – World Central Kitchen</h3>
+                <p>Celebrity chef José Andrés founded World Central Kitchen (WCK) in 2010, a non-profit organization that provides meals to those affected by natural disasters and crises around the world. When Hurricane Maria devastated Puerto Rico in 2017, Andrés and his team quickly mobilized, serving over 3 million meals to people in need. WCK has since expanded its mission to respond to crises globally, including feeding communities during the COVID-19 pandemic, conflicts, and natural disasters. Andrés’ innovative approach to disaster relief has inspired people worldwide to recognize the power of food in restoring hope and humanity.</p>
+            </div>
+           
+        </div>
+    </section>
+    <!------stories----->
+    <section class="stories">
+        <h1>Stories</h1>
+        <p>Sharing meals, spreading hope: Together we nourish lives.</p>
+        <div class="row">
+            <div class="stories-col">
+                <img src="image/picture5.jpg">
+                <h3>Satyakama and the Story of Feeding Strangers</h3>
+                <p>In ancient Indian scriptures, the story of Satyakama Jabala in the Chandogya Upanishad emphasizes the value of selflessness and generosity. Satyakama, a young boy, wanted to study under a guru. After leaving his home, he followed his guru’s teaching and showed compassion to travelers by offering food and shelter to anyone in need. This act of donating food to strangers, without any expectation in return, was seen as a path to spiritual growth. This story shows how food donation (often referred to as anna daan) was an essential part of dharma.</p>
+            </div>
+            <div class="stories-col">
+                <img src="image/picture6.jpg">
+                <h3> The Legend of Raja Harishchandra</h3>
+                <p>Raja Harishchandra, known for his devotion to truth and righteousness, ruled over his kingdom with immense generosity. One famous story tells of how, during a severe drought, Harishchandra gave away all his wealth, including his throne, to ensure that no one in his kingdom went hungry. Even after losing everything, he continued to provide food for those in need by working in a crematorium. His legendary act of giving away his possessions and feeding others is still remembered in Indian culture as an embodiment of selfless sacrifice and food charity.</p>
+            </div>
+            <div class="stories-col">
+                <img src="image/picture7.jpg">
+                <h3> Guru Nanak and the Foundation of Langar</h3>
+                <p>Guru Nanak, the founder of Sikhism, emphasized equality, community service, and food donation as a way to eliminate social hierarchies. The story of Guru Nanak feeding the hungry is famous for laying the foundation of the Langar tradition, a free communal kitchen found in every Gurdwara. One day, Guru Nanak was given some money by his father to start a business. Instead of using it for trade, he bought food and distributed it to the poor. His father was initially angry, but Nanak explained that feeding the hungry was the true business of life. This act led to the establishment of Langar, where anyone, regardless of caste, creed, or status, can eat for free—a tradition that continues to this day.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------ABOUT US----->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Seed2Feed, an initiative dedicated to reducing food waste and fighting hunger. We collect leftover food from events, hotels, and restaurants and redistribute it to those in need through partnerships with NGOs and school feeding programs.<br>
+
+            Our mission is simple: ensure that no food goes to waste while helping people in need access nutritious meals. We focus on three key areas:
+            
+            Redistributing Surplus Food: Collecting and delivering excess food to communities.<br>
+            School Feeding Programs: Providing meals to underprivileged students to support their education.<br>
+            Sustainability & Education: Teaching communities to grow their own food and reduce waste.<br>
+            Join us in making a difference—one plate at a time.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+
+        </div>
+        <p>Made by TechTrio</p>
+    
+    
+    
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----------JAVASCRIPT for toggle menu-------->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donations - Seed to Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="food-donations.css">
+</head>
+<body>
+    <header>
+        <h1>Food Donations</h1>
+        <nav>
+            <ul>
+                <li><a href="Food-initiative.html">Home</a></li>
+                <li><a href="school-feeding.html">School Feeding Programs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="food-donations">
+        <div class="content-container">
+            <div class="form-container">
+                <h2>Donate Surplus Food</h2>
+                <p>Help us redistribute surplus food to people in need.</p>
+
+                <form id="donationForm" method="POST" action="process_donation.php">
+                    <div class="input-group">
+                        <label for="donorName">Your Name:</label>
+                        <input type="text" id="donorName" name="donorName" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="donorType">Donation Type:</label>
+                        <select id="donorType" name="donorType" required>
+                            <option value="wedding">Wedding</option>
+                            <option value="hotel">Hotel</option>
+                            <option value="event">Event</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="foodDetails">Details of Food:</label>
+                        <textarea id="foodDetails" name="foodDetails" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Donate Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
