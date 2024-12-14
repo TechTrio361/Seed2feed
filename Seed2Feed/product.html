@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustain Sphere</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <section class ="sub-header">
+        <nav>
+            <a href="index.html"><img src =""></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()" ></i>
+        </nav>
+        <h1>Eco-Friendly & Sustainable Products</h1>
+    </section>
+    <section id="product-section">
+        <div class="product-grid">
+            <div class="product" data-aos="fade-up">
+                <img src="image/product1.jpg" alt="Bamboo Toothbrush">
+                <h3>Bamboo Toothbrush</h3>
+                <p>This biodegradable bamboo toothbrush is an eco-friendly alternative to plastic.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="200">
+                <img src="image/product2.jpg" alt="Reusable Shopping Bags">
+                <h3>Reusable Shopping Bags</h3>
+                <p>Reduce plastic waste with these stylish, reusable shopping bags made from recycled materials.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="400">
+                <img src="image/product3.jpg" alt="Organic Cotton T-Shirt">
+                <h3>Organic Cotton T-Shirt</h3>
+                <p>Made from 100% organic cotton, this t-shirt is both soft and sustainable.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="600">
+                <img src="image/product4.jpg" alt="Eco-Friendly Notebook">
+                <h3>Eco-Friendly Notebook</h3>
+                <p>Notebooks made from recycled paper or bamboo, perfect for sustainable note-taking.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="800">
+                <img src="image/product5.jpg" alt="Organic Skincare Products">
+                <h3>Organic Skincare Products</h3>
+                <p>Skincare items made from natural, organic ingredients, safe for you and the planet.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+            <!----second row--->
+            <div class="product" data-aos="fade-up" data-aos-delay="1000">
+                <img src="image/product6.jpg" alt="Reusable Water Bottle">
+                <h3>Reusable Water Bottle</h3>
+                <p>This stainless steel reusable water bottle helps reduce single-use plastic waste.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="1200">
+                <img src="image/product7.jpg" alt="Compostable Food Wrap">
+                <h3>Compostable Food Wrap</h3>
+                <p>Eco-friendly food wraps made from beeswax, perfect for replacing plastic wraps.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="1400">
+                <img src="image/product8.jpg" alt="Recycled Paper Planner">
+                <h3>Recycled Paper Planner</h3>
+                <p>Keep your life organized with this eco-friendly planner made from recycled paper.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="1600">
+                <img src="image/product9.jpg" alt="Eco-Friendly Cutlery Set">
+                <h3>Eco-Friendly Cutlery Set</h3>
+                <p>A portable cutlery set made from bamboo, perfect for reducing plastic utensils.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="1800">
+                <img src="image/product10.jpg" alt="Solar-Powered Charger">
+                <h3>Solar-Powered Charger</h3>
+                <p>Charge your devices on the go with this solar-powered charger, ideal for eco-conscious tech lovers.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
+    <!----------JAVASCRIPT for toggle menu-------->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

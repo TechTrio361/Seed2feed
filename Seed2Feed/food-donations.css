@@ -1,0 +1,214 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('image/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure items wrap on small screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-color: white;
+}
+
+/* Main Content */
+#food-donations .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Form Container */
+.form-container {
+    width: 60%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.form-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center; /* Center the description */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #4CAF50;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%; /* Full width button for better usability on small screens */
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 700px) {
+    #food-donations .content-container {
+        flex-direction: column; /* Stack content vertically */
+        width: 90%; /* Increase width for better mobile layout */
+        margin: 20px auto; /* Center with less margin */
+        padding: 20px; /* Reduce padding for smaller devices */
+    }
+
+    .form-container {
+        width: 100%; /* Full width on small screens */
+        padding: 20px; /* Reduce padding for compact design */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce space between menu items */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .form-container h2 {
+        font-size: 1.8rem; /* Adjust heading font size */
+    }
+
+    .form-container p {
+        font-size: 1rem; /* Adjust description font size */
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        font-size: 1rem; /* Reduce input font size */
+        padding: 10px; /* Adjust input padding */
+    }
+
+    .submit-button {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 12px 20px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Smaller header font size for very small screens */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Reduce navigation font size */
+    }
+
+    .form-container h2 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .form-container p {
+        font-size: 0.9rem; /* Further reduce paragraph font size */
+    }
+
+    .submit-button {
+        padding: 10px 15px; /* Smaller button padding */
+    }
+}
